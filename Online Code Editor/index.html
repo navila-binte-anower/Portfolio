@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Live Code Editor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="editor-container">
+    <div class="editor-box">
+      <label><span>🟧</span>HTML</label>
+      <textarea id="html-code" oninput="run()"></textarea>
+    </div>
+    <div class="editor-box">
+      <label><span>🟦</span>CSS</label>
+      <textarea id="css-code" oninput="run()"></textarea>
+    </div>
+    <div class="editor-box">
+      <label><span>🟨</span>JavaScript</label>
+      <textarea id="js-code" oninput="run()"></textarea>
+    </div>
+  </div>
+  <div class="output-container">
+    <div class="output-header">Output</div>
+    <div class="output-body">
+      <iframe id="output"></iframe>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

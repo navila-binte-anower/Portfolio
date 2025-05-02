@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+body {
+  display: flex;
+  height: 100vh;
+  background-color: #111;
+  color: white;
+}
+.editor-container {
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.editor-box {
+  flex: 1;
+  background-color: #222;
+  border: 1px solid white;
+  padding: 5px;
+}
+.editor-box label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #333;
+  padding: 5px;
+  font-weight: bold;
+}
+.editor-box textarea {
+  width: 100%;
+  height: 100px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  outline: none;
+  resize: vertical;
+  font-size: 14px;
+}
+.output-container {
+  width: 50%;
+  border: 2px solid white;
+  background-color: #fff;
+  position: relative;
+}
+.output-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  border-bottom: 1px solid white;
+  font-weight: bold;
+}
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.output-body {
+  height: 100%;
+  padding-top: 30px;
+}
